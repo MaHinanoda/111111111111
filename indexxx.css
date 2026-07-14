@@ -2,6 +2,7 @@ header {
     position: relative;
     height: 40vh;
     background-image: url(./gazo/mny0141-001.webp);
+    background-size: cover;
 
 }
 
@@ -12,7 +13,7 @@ header h1 {
     z-index: 1;
     top: 10%;
     width: 100%;
-    font-size: clamp(2rem,6vw,5rem);
+    font-size: clamp(3.5rem,6vw,5rem);
     color: #333;
     -webkit-text-stroke: 1px #282828;
     text-shadow: 0px 4px 4px #282828;
