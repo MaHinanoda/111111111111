@@ -1,84 +1,59 @@
 header {
     position: relative;
     height: 40vh;
-    background-image: url("./gazo/mny0141-001.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(./gazo/mny0141-001.webp);
+
 }
 
 header h1 {
+
     position: absolute;
     text-align: center;
     z-index: 1;
     top: 10%;
     width: 100%;
-    font-size: clamp(2rem, 6vw, 5rem);
+    font-size: clamp(2rem,6vw,5rem);
     color: #333;
     -webkit-text-stroke: 1px #282828;
     text-shadow: 0px 4px 4px #282828;
-    padding: 0 10px;
-    box-sizing: border-box;
 }
 
 #popup-close {
     display: none;
 }
 
-#popup-close:checked + .popup {
+#popup-close:checked+.popup {
     display: none;
 }
 
 .popup {
     box-sizing: border-box;
     box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7);
-    position: fixed;
-    inset: 0;
+    position: relative;
     margin: auto;
-    width: min(90vw, 700px);
+    width: min(90vw,700px);
     height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .popup-content {
-    content: url("./gazo/van.png");
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 90vh;
+    content: url(./gazo/van.png);
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    width: min(90vw,700px);
+    height: fit-content;
+    max-width: 96%;
+    max-height: 96%;
+
 }
 
 .icon-close {
     background: #000;
     color: #fff;
-    font-size: 14px;
+    font-size: 10px;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 6px 10px;
-    cursor: pointer;
-}
-
-/* スマホ用 */
-@media (max-width: 768px) {
-    header {
-        height: 30vh;
-    }
-
-    header h1 {
-        top: 15%;
-        font-size: clamp(1.8rem, 8vw, 3rem);
-    }
-
-    .popup {
-        width: 95vw;
-    }
-
-    .icon-close {
-        font-size: 12px;
-        padding: 5px 8px;
-    }
+    right: 0;
 }
